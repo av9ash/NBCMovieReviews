@@ -1,0 +1,80 @@
+PyDev console: starting.
+Python 3.6.5 (default, Apr  1 2018, 05:46:30) 
+[GCC 7.3.0] on linux
+runfile('/home/avi/PycharmProjects/CSE575Q6/NaiveBayes.py', wdir='/home/avi/PycharmProjects/CSE575Q6')
+Starting..
+Begining Training..
+Ratio selected:  0.1
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.793
+Positive Classification 
+	 Accuracy: 0.903
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+Begining Training..
+Ratio selected:  0.3
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.824
+Positive Classification 
+	 Accuracy: 0.919
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+Begining Training..
+Ratio selected:  0.5
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.838
+Positive Classification 
+	 Accuracy: 0.930
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+Begining Training..
+Ratio selected:  0.7
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.848
+Positive Classification 
+	 Accuracy: 0.939
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+Begining Training..
+Ratio selected:  0.8
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.856
+Positive Classification 
+	 Accuracy: 0.943
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+Begining Training..
+Ratio selected:  0.9
+Training Done!
+Calculating likelyhood..
+Testing..
+Getting Results..
+Negative Classification 
+	 Accuracy: 0.844
+Positive Classification 
+	 Accuracy: 0.955
+Loop Done. /n
+-------------------------------------------------------------+/n/n/n/n
+[1386, 4160, 6933, 9706, 11093, 12480]
+[1421, 4263, 7105, 9947, 11368, 12789]
+
