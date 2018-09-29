@@ -140,7 +140,7 @@ def training_input(directory, dictionary,ratio):
         # print(bag_of_words)
         select_dict(bag_of_words, dictionary)
         countDocs[dictionary] += 1
-        write_matrix(bag_of_words,file)
+        # write_matrix(bag_of_words,file) Uncomment this to start generating the matrix file.
 
         files_count -=1
         if files_count==0:
