@@ -38,6 +38,7 @@ def get_accuracy(result, col):
     return tmpresult
 
 
+# output the accuracy for each iteration
 def gen_report(result):
     prob_neg = get_accuracy(result, 0)
     prob_pos = get_accuracy(result, 1)
@@ -73,7 +74,7 @@ def testing_input(directory, dictionary):
 
 
 # Starts the testing phase.
-def do_Test():
+def do_test():
     global res
     res = [[0,0], [0,0]]
     cwd = os.getcwd()
@@ -83,6 +84,7 @@ def do_Test():
     os.chdir(cwd)
 
 
+# This method calculates the likelyhood using laplace smoothing
 def likelyhood(alpha):
     global cond_prob
     cond_prob = {}
@@ -96,7 +98,7 @@ def likelyhood(alpha):
 
 
 # output sparse matrix in (r,c,v) format
-def writeMatrix(bag_of_words,file):
+def write_matrix(bag_of_words,file):
 
     path = os.path.abspath(os.curdir)
     path = Path(path)
@@ -136,7 +138,7 @@ def training_input(directory, dictionary,ratio):
         # print(bag_of_words)
         select_dict(bag_of_words, dictionary)
         countDocs[dictionary] += 1
-        writeMatrix(bag_of_words,file)
+        write_matrix(bag_of_words,file)
 
         files_count -=1
         if files_count==0:
@@ -188,7 +190,7 @@ def main():
         likelyhood(1)
 
         print("Testing..")
-        do_Test()
+        do_test()
 
         print("Getting Results..")
         result = gen_report(res)
