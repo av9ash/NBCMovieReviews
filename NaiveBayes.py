@@ -78,9 +78,11 @@ def do_test():
     global res
     res = [[0,0], [0,0]]
     cwd = os.getcwd()
-    testing_input("data/neg/", 0)
+    testing_input("data/test/neg/", 0)
+    # testing_input("data/neg/", 0)
     os.chdir(cwd)
-    testing_input("data/pos/", 1)
+    testing_input("data/test/pos/", 1)
+    # testing_input("data/pos/", 1)
     os.chdir(cwd)
 
 
@@ -165,9 +167,11 @@ def select_dict(bag_of_words, dictionary):
 # Train the model
 def do_Train(alpha,ratio):
     cwd = os.getcwd()
-    training_input("data/pos/", 1,ratio) #positives
+    training_input("data/test/pos/", 1, ratio)  # positives
+    # training_input("data/pos/", 1,ratio) #positives
     os.chdir(cwd)
-    training_input("data/neg/", 0,ratio) #negatives
+    training_input("data/test/neg/", 0,ratio) #negatives
+    # training_input("data/neg/", 0, ratio)  # negatives
     os.chdir(cwd)
     likelyhood(alpha)
 
